@@ -7,3 +7,13 @@
 #' @docType data
 #' @name pnsfromnlfh
 NULL
+
+#' neuronlistfh object made with delayedAssign
+#'
+#' @details The source data for this object live in \code{extdata} and consist
+#'   of a metadata object saved as \code{{pnsnlfh.rds}} along with a \code{data}
+#'   folder. When the package is loaded the neuronlistfh object is loaded into
+#'   an object called \code{pnsnlfh} using \code{\link{delayedAssign}}.
+#' @docType data
+#' @name pnsnlfh
+NULL
