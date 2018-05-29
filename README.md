@@ -1,3 +1,5 @@
+[![Travis build status](https://travis-ci.org/jefferis/testlazyneuronlist.svg?branch=master)](https://travis-ci.org/jefferis/testlazyneuronlist)
+
 # testlazyneuronlist
 
 The goal of testlazyneuronlist is to test strategies for including large
