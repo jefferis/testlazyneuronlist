@@ -3,9 +3,10 @@ Version: 0.0.0.9000
 Title: Testing lazy data load strategies
 Description: Trying to figure out how to make neuronlist objects from separately
     versioned neuron and metadata objects.
-Authors@R: person("Gregory","Jefferis", email="jefferis@gmail.com", 
-    role=c("aut", "cre"), comment = c(ORCID = "0000-0002-0587-9355"))
+Authors@R: person("Gregory","Jefferis", email="jefferis@gmail.com", role=c("aut", "cre"), comment = c(ORCID = "0000-0002-0587-9355"))
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
+RoxygenNote: 6.0.1
+Depends: R (>= 2.10)
