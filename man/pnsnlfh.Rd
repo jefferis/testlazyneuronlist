@@ -4,12 +4,17 @@
 \name{pnsnlfh}
 \alias{pnsnlfh}
 \title{neuronlistfh object made with delayedAssign}
+\format{An object of class \code{neuronlistfh} (inherits from \code{neuronlist}, \code{logical}) of length 40.}
+\usage{
+pnsnlfh
+}
 \description{
 neuronlistfh object made with delayedAssign
 }
 \details{
 The source data for this object live in \code{extdata} and consist
-  of a metadata object saved as \code{{pnsnlfh.rds}} along with a \code{data}
+  of a metadata object saved as \code{pnsnlfh.rds} along with a \code{data}
   folder. When the package is loaded the neuronlistfh object is loaded into
   an object called \code{pnsnlfh} using \code{\link{delayedAssign}}.
 }
+\keyword{datasets}
