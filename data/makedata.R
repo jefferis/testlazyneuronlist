@@ -13,9 +13,9 @@
 # delayedAssign('pnsfromnlfh',
 #               helloexec(nat::as.neuronlist(nat::read.neuronlistfh(find_extdata('pnsnlfh.rds'))),
 #                         prefix = 'delayed:'))
-delayedAssign('pnsfromnlfh', nat::as.neuronlist(nat::read.neuronlistfh(testlazyneuronlist:::find_extdata('pnsnlfh.rds'))))
+delayedAssign('pnsfromnlfh', nat::as.neuronlist(nat::read.neuronlistfh(nat.utils::find_extdata('pnsnlfh.rds', package='testlazyneuronlist'))))
 
-delayedAssign('pnsnlfh', nat::read.neuronlistfh(testlazyneuronlist:::find_extdata('pnsnlfh.rds')))
+delayedAssign('pnsnlfh', nat::read.neuronlistfh(nat.utils:::find_extdata('pnsnlfh.rds', package='testlazyneuronlist')))
 # didn't work
 # pnsfromnlfh_immediate <-
 #   helloexec(nat::as.neuronlist(nat::read.neuronlistfh(f)), prefix = "immediate:")
