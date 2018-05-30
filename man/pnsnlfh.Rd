@@ -3,18 +3,34 @@
 \docType{data}
 \name{pnsnlfh}
 \alias{pnsnlfh}
+\alias{pnsnlfh}
+\alias{pns_separated}
 \title{neuronlistfh object made with delayedAssign}
 \format{An object of class \code{neuronlistfh} (inherits from \code{neuronlist}, \code{logical}) of length 40.}
 \usage{
 pnsnlfh
+
+pns_separated
 }
 \description{
 neuronlistfh object made with delayedAssign
+
+neuronlist object made from parts in extdata with delayedAssign
 }
 \details{
 The source data for this object live in \code{extdata} and consist
   of a metadata object saved as \code{pnsnlfh.rds} along with a \code{data}
   folder. When the package is loaded the neuronlistfh object is loaded into
   an object called \code{pnsnlfh} using \code{\link{delayedAssign}}.
+
+The source data for this object live in \code{extdata} and consists
+  of a metadata object saved as \code{pnsnlfh.rds} along with a \code{data}
+  folder. When the package is loaded the neuronlistfh object is loaded into
+  an object called \code{pnsnlfh} using \code{\link{delayedAssign}}.
+}
+\examples{
+\dontrun{
+save_nl_in_parts(Cell07PNs, 'pns_separated')
+}
 }
 \keyword{datasets}
