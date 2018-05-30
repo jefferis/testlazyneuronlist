@@ -1,21 +1,10 @@
-
-# helloexec <- function(expr, prefix=NULL) {
-#   cl=match.call()
-#   msg=as.character(cl[2])
-#   if(!is.null(prefix)) {
-#     msg=paste(prefix, msg)
-#   }
-#   message(msg)
-#   expr
-# }
-
-# gave warning messages about method signatures
-# delayedAssign('pnsfromnlfh',
-#               helloexec(nat::as.neuronlist(nat::read.neuronlistfh(find_extdata('pnsnlfh.rds'))),
-#                         prefix = 'delayed:'))
+# neuronlist from neuronlistfh
 delayedAssign('pnsfromnlfh', nat::as.neuronlist(nat::read.neuronlistfh(nat.utils::find_extdata('pnsnlfh.rds', package='testlazyneuronlist'))))
 
+# neuronlistfh from extdata
 delayedAssign('pnsnlfh', nat::read.neuronlistfh(nat.utils:::find_extdata('pnsnlfh.rds', package='testlazyneuronlist')))
-# didn't work
-# pnsfromnlfh_immediate <-
-#   helloexec(nat::as.neuronlist(nat::read.neuronlistfh(f)), prefix = "immediate:")
+
+# nb this doesn't work - I think because inst/extdata is only installed after
+# data/makedata.R is processed.
+# pns_separated <- nat.utils::read_nl_from_parts("pns_separated.rds", package = 'testlazyneuronlist')
+delayedAssign('pns_separated', nat.utils::read_nl_from_parts("pns_separated.rds", package = 'testlazyneuronlist'))
